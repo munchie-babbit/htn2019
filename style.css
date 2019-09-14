@@ -4,10 +4,49 @@
     font-family: Roboto, sans-serif;
   }
 
+  /* Profile Info */
+  #user-align {
+    text-align: start;
+  }
+  #dp-align {
+    text-align: end;
+  }
+  #dp {
+    border-radius: 100px; 
+  }
+  .container #user-align p {
+    margin: -5px;
+    padding: 0px;
+  }
+
+  /* Top Bar */
   .navbar-default {
     background-color: rgb(240, 240, 240);
   }
 
+  /* Menu Bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ABABAB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+  }
+  .topnav a:hover {
+    color: black;
+    text-decoration: none;
+
+  }
+  .topnav a.active {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  /* Content */
   .container h1 {
     font-size: 16px;
     color: #ABABAB;
@@ -34,36 +73,4 @@
     color: #DDEAF5;
     padding: 25px 25px; 
     margin: 10px 0px; 
-  }
-  
-  
-  /* Menu Bar */
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #ABABAB;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 21px;
-  }
-  
-  .topnav a:hover {
-    color: black;
-    text-decoration: none;
-
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    color: black;
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
   }

@@ -1,3 +1,4 @@
+/* Render Top Navigation */
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -7,8 +8,10 @@ function myFunction() {
   }
 }
 
-$(document).ready(function(){	
-  
-  $('.container').fadeIn(1000);
-  $('.container').animate({marginTop: '-10px'}, "slow");
+/* Body Content Animation*/
+$(document).ready(function(){ 
+  $('#toanimate').fadeIn(1000);
+  $("#toanimate").animate({
+    marginTop: '-15px'
+  }, { duration: 500, queue: false });
 });
