@@ -1,0 +1,16 @@
+{
+  "name": "novella-htn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --w scss/main.scss css/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

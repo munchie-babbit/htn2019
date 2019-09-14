@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
+  }
+
+  #logo {
+    width: 100px;
+    display: block;
+    float: left;
+  }
+  
+  .container h1 {
+    font-size: 16px;
+    color: #ABABAB;
+    text-align: left;
+  }
+
+  .boxes {
+    background-color: #51B39B;
+    box-shadow: 1px 1px 17px 0 #DFE6EB;
+    color: #DDEAF5;
+    padding: 25px 50px 75px 100px; 
+  }
+  
+  /* Top Bar */
+  .topbar {
+    float: centre;
+    font-family: Helvetica, sans-serif; 
+    font-weight: bold; 
+    display: block;
+    color: white;
+    background-color: #F2F4F7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  /* Menu Bar */
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ABABAB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+  }
+  
+  .topnav a:hover {
+    color: black;
+    text-decoration: none;
+
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
