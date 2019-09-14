@@ -24,6 +24,7 @@ class Loan():
 
 
 
+
     def getInvoiceTotal(self):
         invoices = self.invoice_dict['result']['invoices']
         invoiceTotal = 0.0
