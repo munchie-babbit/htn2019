@@ -6,40 +6,41 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="script.js"></script>
+
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   
   <body>
 
-  <!-- Top Bar -->
-  <nav class="navbar navbar-default static-top">
-  <div class="container">
-    <a href="index.html">
-      <img src="htn_logo.svg" alt="Novella Logo" height=30px;/>
-    </a>
-    <a href="fake.html">
-      <img src="htn_logo.svg" alt="Novella Logo" height=30px;/>
-      <p id="username">Test</p>
-      <p id="companyname">Test</p>
-    </a>
-  </div>
-  </nav>
-
-  <!-- Nav Bar-->
-  <div id="nav-placeholder"></div>
-  <script>
+<!-- Top Bar -->
+<nav class="navbar navbar-default static-top">
+    <div class="container">
+        <a href="index.html">
+        <img src="htn_logo.svg" alt="Novella Logo" height=30px;/>
+        </a>
+        <div class="col">
+            <img src="" alt=""/>
+        </div>
+        <div class="col">
+        <p id="username">Test</p>
+        <p id="companyname">Test</p>
+        </div>
+    </div>
+</nav>
+    
+<!-- Nav Bar-->
+<div id="nav-placeholder"></div>
+<script>
     $(function(){
-      $("#nav-placeholder").load("topnav.html");
+    $("#nav-placeholder").load("topnav.html");
     });
-  </script>
-
-  <br>
+</script>
+<br>
 
   <!-- Content -->
 
-  <div class="container">
+  <div class="container" style="display:none">
 
     <div class="row">
       <div class="col-sm-8">
@@ -94,5 +95,7 @@
     </div>
 
   </div>>
+
+  <script src="script.js"></script>
   </body>
 </html>

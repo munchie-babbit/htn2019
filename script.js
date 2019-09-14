@@ -6,3 +6,9 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+$(document).ready(function(){	
+  
+  $('.container').fadeIn(1000);
+  $('.container').animate({marginTop: '-10px'}, "slow");
+});
