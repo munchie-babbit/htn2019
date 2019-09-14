@@ -4,10 +4,8 @@
     font-family: Roboto, sans-serif;
   }
 
-  #logo {
-    width: 100px;
-    display: block;
-    float: left;
+  .navbar-default {
+    background-color: rgb(240, 240, 240);
   }
   
   .container h1 {
@@ -16,25 +14,26 @@
     text-align: left;
   }
 
-  .boxes {
+  .container h2 {
+    font-size: 16px;
+    color: #ABABAB;
+    text-align: left;
+  }
+
+  .overview {
     background-color: #51B39B;
     box-shadow: 1px 1px 17px 0 #DFE6EB;
     color: #DDEAF5;
-    padding: 25px 50px 75px 100px; 
+    padding: 25px 25px; 
+    margin: 10px 0px; 
   }
-  
-  /* Top Bar */
-  .topbar {
-    float: centre;
-    font-family: Helvetica, sans-serif; 
-    font-weight: bold; 
-    display: block;
-    color: white;
-    background-color: #F2F4F7;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+
+  .boxes {
+    background-color: white;
+    box-shadow: 1px 1px 17px 0 #DFE6EB;
+    color: #DDEAF5;
+    padding: 25px 25px; 
+    margin: 10px 0px; 
   }
   
   

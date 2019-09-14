@@ -12,50 +12,87 @@
   </head>
   
   <body>
-  
-  <!-- Top Bar-->
-  <div class="topbar">
-    <div class=".container-fluid" id="logo">
-        <a href="index.html">
-          <img src="htn_logo.svg" alt="Novella Logo" />
-        </a>
-    </div>
+
+  <!-- Top Bar -->
+  <nav class="navbar navbar-default static-top">
+  <div class="container">
+    <a href="index.html">
+      <img src="htn_logo.svg" alt="Novella Logo" height=30px;/>
+    </a>
+    <a href="fake.html">
+      <img src="htn_logo.svg" alt="Novella Logo" height=30px;/>
+      <p id="username">Test</p>
+      <p id="companyname">Test</p>
+    </a>
   </div>
-  
-  <br>
-  <br>
+  </nav>
 
-<!-- Nav Bar-->
-<div id="nav-placeholder"></div>
-<script>
-  $(function(){
-    $("#nav-placeholder").load("topnav.html");
-  });
-</script>
+  <!-- Nav Bar-->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("topnav.html");
+    });
+  </script>
 
-  <br>
-  <br>
   <br>
 
   <!-- Content -->
 
   <div class="container">
+
     <div class="row">
       <div class="col-sm-8">
         <h1>OVERVIEW</h1>
-        <div class="boxes">
-          <p>test</p>
+        <div class="overview">
+          <div class="row">
+            <div class="col-sm-4">
+                <h3>test</h3>
+                <p>Revenue</p>
+              </div>
+              <div class="col-sm-5">
+                  <h3>test</h3>
+                  <p>Profit</p>
+              </div>
+              <div class="col-sm-1">
+                <h3>test</h3>
+                <p>Profitability</p>
+            </div>
+          </div>
         </div>
       </div>
-
       <div class="col-sm-4">
-        <h1>NOTES</h1>
+          <h1>NOTES</h1>
+          <div class="boxes">
+            <h2>Quick Update</h2>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">
         <div class="boxes">
-          <p>test</p>
+          <h2>Today's Sales</h2>
         </div>
       </div>
-    </div> 
-  </div>
+    </div>
 
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="boxes">
+          <h2>Today's Statistics</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="boxes">
+          <h2>Today's Revenue Streams</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>>
   </body>
 </html>
