@@ -37,10 +37,10 @@ def test_authentication():
     profile_dict = identity_dict["response"]["profile"]
     return refresh_token
 
-@app.route('/')
+@app.route('/operations.html')
 def operations():
-    loan = Loan(get_account_id(), _get_access_token())
-    return render_template("operations.html", cogs=loan.get_cash())
+    #loan = Loan(get_account_id(), _get_access_token())
+    return render_template('operations.html')
 
 def _cache_access_token(access_token):
     with open("access_token", "w") as fh:
@@ -93,7 +93,7 @@ def get_account_id():
     res_dict = response['response']
     return res_dict['roles'][0]['accountid']
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
     # loan = Loan(get_account_id(), _get_access_token())
     # print(loan.get_income_total())
