@@ -123,32 +123,67 @@
 
 </div>
 
-<!-- Content -->
+<!-- River's Assistant Form -->
 <div class="container" id="page1" style="">
     <div class="as-boxes">
         <div class="row">
-            <div class="col-sm-4" id="harper">
-                <img src="../assistants2-02.svg" class="img-fluid" alt="Harper"/>
+            <div class="col-sm-4" id="river">
+                <img src="../assistants2-01.svg" class="img-fluid" alt="Harper"/>
             </div> 
             <div class="col" id="as-txt">
                 <h3>Hello! </h3>
                 <h3>It's nice to meet you, Alex. </h3>
-                <p>I hear that you're interested in potentially taking out a loan; can I ask, </p>
+                <p>I hear that you're interested in potentially taking out a loan. May I ask, </p>
                 <br>
                 <form id="frm" action="" onsubmit="return false"> 
                     <section>
+                        
                         <label for="para">What are you taking the loan out for?</label>
                         <br>
-                        <input rows="4" cols="50" type="text"></input>
-                        <span class="button">
-                            <button id="button" type="submit" onclick="intake()">Submit</button>
+                        <input size="50" type="text"></input>
+                        <span class="next">
+                            <button id="river" type="submit"><p class="white-txt">></p></button>
                         </span>
+                        
+                        <label for="para">What are you taking the loan out for?</label>
+                        <br>
+                        <input size="50" type="text"></input>
+                        <span class="next">
+                            <button id="river" type="submit"><p class="white-txt">></p></button>
+                        </span>
+
                     </section>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<div class="container" id="page2" style="">
+        <div class="as-boxes">
+            <div class="row">
+                <div class="col-sm-4" id="river">
+                    <img src="../assistants2-01.svg" class="img-fluid" alt="Harper"/>
+                </div> 
+                <div class="col" id="as-txt">
+                    <h3>That could be a smart idea. </h3>
+                    <p>To begin accessing your loan, let's take a look at your <strong>cash position.</strong></p>
+                    <br>
+                    <div class="row">
+                        <div class="col-3">
+                            <h3 id="money">$2,300</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>$16K</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>$19K</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <script src="../script.js"></script>
 <script src="../Chart.js"></script>
