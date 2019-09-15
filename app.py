@@ -1,7 +1,7 @@
 import os
 from os.path import join, dirname
 import requests
-from flask import Flask, request
+from flask import Flask, request, render_template
 import json
 from loan import *
 
@@ -37,6 +37,10 @@ def test_authentication():
     profile_dict = identity_dict["response"]["profile"]
     return refresh_token
 
+@app.route('/')
+def operations():
+    loan = Loan(get_account_id(), _get_access_token())
+    return render_template("operations.html", cogs=loan.get_cash())
 
 def _cache_access_token(access_token):
     with open("access_token", "w") as fh:
@@ -90,6 +94,14 @@ def get_account_id():
     return res_dict['roles'][0]['accountid']
 
 if __name__ == "__main__":
-    # app.run(ssl_context='adhoc')
-    loan = Loan(get_account_id(), _get_access_token())
-    print(loan.getIncomeTotal())
+    app.run()
+    # loan = Loan(get_account_id(), _get_access_token())
+    # print(loan.get_income_total())
+    # print(loan.get_expense_total())
+    # print(loan.get_average_order_value())
+    # print(loan.get_profit())
+    # print(loan.get_sales_on_account())
+    # print(loan.get_profit_analysis())
+    # print(loan.get_cash())
+    # print(loan.get_biggest_exp())
+    # print(loan.get_client_dict())
