@@ -84,8 +84,6 @@
     background-color: white;
     box-shadow: 1px 1px 17px 0 #DFE6EB;
     color: #DDEAF5;
-    padding: 25px 25px; 
-    margin: 10px 0px; 
   }
 
   .side-box {
@@ -96,4 +94,25 @@
 
   .side-box p {
     padding: 25px 25px; 
+  }
+
+  #river {
+    background-color: #429BE3;
+    color: #DDEAF5;
+    padding: 0px; 
+    margin: 0px; 
+  }
+  #harper {
+    background-color: #51B39B;
+    box-shadow: 1px 1px 17px 0 #DFE6EB;
+    color: #DDEAF5;
+    padding: 25px 25px; 
+    margin: 10px 0px; 
+  }
+  #jordan {
+    background-color: #E08989;
+    box-shadow: 1px 1px 17px 0 #DFE6EB;
+    color: #DDEAF5;
+    padding: 25px 25px; 
+    margin: 10px 0px; 
   }
