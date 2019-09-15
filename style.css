@@ -252,3 +252,9 @@ button {
   .logo {
     fill: #425a72;
   }
+h4 {
+  font-size: 28px;
+  color: #262626!important;
+  text-align: left;
+  margin-top: 24px;
+}
