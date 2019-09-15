@@ -43,9 +43,9 @@ def operations():
     return render_template('operations.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp())
 
 @app.route('/')
-def operations():
+def index():
     loan = Loan(get_account_id(), _get_access_token())
-    return render_template('operations.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp())
+    return render_template('index.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp())
 
 def _cache_access_token(access_token):
     with open("access_token", "w") as fh:
