@@ -19,9 +19,11 @@
     <nav class="navbar navbar-default static-top">
         <div class="container">
             <a href="index.html">
-                <img src="{{ url_for('static',filename='images/htn_logo.svg') }}" alt="Novella Logo" height=30px; />
+            <img src="{{ url_for('static',filename='images/htn_logo.svg') }}" alt="Novella Logo" height=30px; />
             </a>
-            <div class="col-9"></div>
+            <div class="col-8">
+                <img src="" alt=""/>
+            </div>
             <div class="col-1" id="dp-align">
                 <img src="{{ url_for('static',filename='images/alexdp.jpg') }}" alt="Profile Image" height=30px; id="dp" />
             </div>
@@ -37,11 +39,11 @@
             <div class="row">
               <div class="topnav" id="myTopnav">
               <a href="index.html" id="index">Sales</a>
-              <a href="marketing.html" id="marketing">Marketing</a>
+              <a href="" id="marketing">Marketing</a>
               <a href="operations.html" id="operations">Operations</a>
-              <a href="finances.html" id="finances">Finances</a>
+              <a href="" id="finances">Finances</a>
               <a href="assistants.html" id="assistants">Assistants</a>
-              <a href="add.html"><strong>+</strong></a>
+              <a href=""><strong>+</strong></a>
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
@@ -93,7 +95,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="boxes">
-                            <h2>Age of Accounts Receivable</h2>
+                            <h2>Main Sources of Cash</h2>
+                            <h3>Clarance Drazilov</h3>
                         </div>
                     </div>
                 </div>
@@ -101,7 +104,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="boxes">
-                            <h2>Age of Accounts Payable</h2>
+                            <h2>Main Uses of Cash</h2>
+                            <h3>Clarance Drazilov</h3>
                         </div>
                     </div>
                 </div>
@@ -110,6 +114,7 @@
                     <div class="col">
                         <div class="boxes">
                             <h2>Age of Inventory</h2>
+                            <h3>3 Days</h3>
                         </div>
                     </div>
                 </div>
@@ -119,9 +124,10 @@
             <div class="col-sm-4">
                 <h1>NOTES</h1>
                 <div class="side-box">
-                    <img src="https://www.thebalancesmb.com/thmb/LOiSDrf5OQMWDwnZxq9ISksPMUI=/533x400/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-907736222-5bd818fa46e0fb0051685a1b.jpg"
-                        class="img-fluid" alt="Responsive image">
-                    <p>test test test</p>
+                    <h2>A Suggestion</h2>
+                    <img src="{{ url_for('static',filename='images/pink.png') }}" class="img-fluid illustration" alt="Responsive image">
+                    <h3 style="font-size: 16px !important";>Age of Account Receivables</h3>
+                    <p class="grey-txt">Taking a look at the <b class="pink-txt">day to day operations</b> of Bailey's Catering, we can see that cash is being generated from operations, which is <b class="pink-txt"> highly sustainable</b>. In the future, by collecting on invoices faster, it would be possible decrease the gap in working capital and lower the dependency on a loan.</p>
                 </div>
             </div>
 
@@ -129,14 +135,10 @@
     </div>
 
 </div>
-<<<<<<< HEAD
-<script src="../script.js"></script>
-<script src="../Chart.js"></script>
-<script src="../operations_chart.js"></script>
-=======
-    <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='javascript/Chart.js') }}"></script>
-    <script>
+
+  <script>
         var ctx = document.getElementById('operations_chart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -178,9 +180,11 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-    </script>
->>>>>>> a4fc9e10f48488458a7ad5c6d1c6edf979ca5fe4
+</script>
 
 </body>
+<footer style="height:80px"> 
+
+    </footer>
 
 </html>
