@@ -8,10 +8,16 @@ function myFunction() {
   }
 }
 
-/* Body Content Animation*/
 $(document).ready(function(){ 
+  /* Body Content Animation*/
   $('#toanimate').fadeIn(1000);
   $("#toanimate").animate({
     marginTop: '-15px'
   }, { duration: 500, queue: false });
+
+  /* River's Assistant Form*/
+  $("#river").click(function(){
+    $("p").slideDown();
+  });
 });
+
