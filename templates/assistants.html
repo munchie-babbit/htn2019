@@ -74,7 +74,7 @@
                             <h3>Taking Out a Loan</h3>
                             <p>With River</p>
                             <p class="grey-txt" href="">Interested in taking out a loan to help finance Bailey’s Catering? River, our smart assistant can give you recommendations based on your needs to help improve  your chances of receiving a loan. Chat with her today! </p>
-                            <button id="river"><p class="white-txt">Get Started</p></button>
+                            <button id="river-button"><p class="white-txt">Get Started</p></button>
                         </div>
                     </div>
                 </div>
@@ -124,14 +124,14 @@
 </div>
 
 <!-- River's Assistant Form -->
-<div class="container" id="page1" style="">
+<div class="container" id="page1" style="display:none">
     <div class="as-boxes">
         <div class="row">
             <div class="col-sm-4" id="river">
-                <img src="../assistants2-01.svg" class="img-fluid" alt="Harper"/>
+                <img src="../assistants2-01.svg" class="img-fluid" alt="River"/>
             </div> 
             <div class="col" id="as-txt">
-                <h3>Hello! </h3>
+                <h3>Hello!</h3>
                 <h3>It's nice to meet you, Alex. </h3>
                 <p>I hear that you're interested in potentially taking out a loan. May I ask, </p>
                 <br>
@@ -141,16 +141,12 @@
                         <label for="para">What are you taking the loan out for?</label>
                         <br>
                         <input size="50" type="text"></input>
-                        <span class="next">
-                            <button id="river" type="submit"><p class="white-txt">></p></button>
-                        </span>
-                        
+                        <br>
                         <label for="para">What are you taking the loan out for?</label>
                         <br>
                         <input size="50" type="text"></input>
-                        <span class="next">
-                            <button id="river" type="submit"><p class="white-txt">></p></button>
-                        </span>
+                        <br>
+                        <button id="river-button" type="submit"><p class="white-txt">></p></button>
 
                     </section>
                 </form>
@@ -159,11 +155,11 @@
     </div>
 </div>
 
-<div class="container" id="page2" style="">
+<div class="container" id="page2" style="display:none">
         <div class="as-boxes">
             <div class="row">
                 <div class="col-sm-4" id="river">
-                    <img src="../assistants2-01.svg" class="img-fluid" alt="Harper"/>
+                    <img src="../assistants2-01.svg" class="img-fluid" alt="River"/>
                 </div> 
                 <div class="col" id="as-txt">
                     <h3>That could be a smart idea. </h3>
@@ -180,10 +176,119 @@
                             <h3>$19K</h3>
                         </div>
                     </div>
+                    <div class="row">
+                            <div class="col-3">
+                                <h3 id="money">Cash</h3>
+                            </div>
+                            <div class="col-3">
+                                <h3>Net Income</h3>
+                            </div>
+                            <div class="col-3">
+                                <h3>In Retained Earnings</h3>
+                            </div>
+                        </div>
+                    <button id="river-button"><p class="white-txt">Continue</p></button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container" id="page3" style="display:none">
+        <div class="as-boxes">
+            <div class="row">
+                <div class="col-sm-4" id="river">
+                    <img src="../assistants2-01.svg" class="img-fluid" alt="River"/>
+                </div> 
+                <div class="col" id="as-txt">
+                    <h3>Awesome! We're on our way!</h3>
+                    <p>Let's take a look at how Bailey's Catering is currently doing.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-3">
+                            <h3 id="money">82%</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>$32</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>0.8X</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-3">
+                                <h3 id="money">Net Worth to Total Assets</h3>
+                            </div>
+                            <div class="col-3">
+                                <h3>Debt to Equity Ratio</h3>
+                            </div>
+                            <div class="col-3">
+                                <h3>In Retained Earnings</h3>
+                            </div>
+                        </div>
+                    <button id="river-button"><p class="white-txt">Continue</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="page4" style="display:none">
+        <div class="as-boxes">
+            <div class="row">
+                <div class="col-sm-4" id="river">
+                    <img src="../assistants2-01.svg" class="img-fluid" alt="River"/>
+                </div> 
+                <div class="col" id="as-txt">
+                    <h3>Our last step!</h3>
+                    <p> Finally, lets look at the risk level for Bailey's Catering. </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-3">
+                            <h3 id="money">1.16x</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>0.93x</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-3">
+                                <h3 id="money">Interest Coverage</h3>
+                            </div>
+                            <div class="col-3">
+                                <h3>Current Ratio</h3>
+                            </div>
+                        </div>
+                        <p>Right now Bailey’s Catering is in a good position to cover any
+                                loan interest expenses and almost cover all of its current
+                                expenses.</p>
+                    <button id="river-button"><p class="white-txt">Continue</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="page5" style="display:none">
+            <div class="as-boxes">
+                <div class="row">
+                    <div class="col-sm-4" id="river">
+                        <img src="../assistants2-01.svg" class="img-fluid" alt="River"/>
+                    </div> 
+                    <div class="col" id="as-txt">
+                        <h3>Congratulations!</h3>
+                        <p> Overall Bailey’s Catering has a strong chance of getting approved for a loan. </p>
+                        <br>
+                        <div class="row">
+                            <h3>85%</h3>
+                        </div>
+                        <div class="row">
+                            <p>Right now Bailey’s Catering is in a good position to cover any
+                                    loan interest expenses and almost cover all of its current
+                                    expenses.</p>
+                        </div>
+                        <button id="river-button"><p class="white-txt">Continue</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <script src="../script.js"></script>
 <script src="../Chart.js"></script>
