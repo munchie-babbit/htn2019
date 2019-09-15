@@ -140,3 +140,16 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .col h3 {
+    color: black; 
+  }
+
+  .col p {
+    color: black; 
+    font-size: 15px;
+  }
+
+  #as-txt{
+    padding: 25px 25px;  
+  }
