@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>repl.it</title>
-    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
@@ -18,13 +18,13 @@
 <nav class="navbar navbar-default static-top">
     <div class="container">
         <a href="index.html">
-        <img src="../htn_logo.svg" alt="Novella Logo" height=30px;/>
+        <img src="{{ url_for('static',filename='images/htn_logo.svg') }}" alt="Novella Logo" height=30px;/>
         </a>
         <div class="col-8">
             <img src="" alt=""/>
         </div>
         <div class="col-1" id="dp-align">
-          <img src="../alexdp.jpg" alt="Profile Image" height=30px; id="dp"/>
+            <img src="{{ url_for('static',filename='images/alexdp.jpg') }}" alt="Profile Image" height=30px; id="dp" />
         </div>
         <div class="col" id="user-align">
           <p id="username">Test</p>
@@ -77,11 +77,11 @@ document.getElementById("index").className = "active";
                 <p>Revenue</p>
               </div>
               <div class="col-sm-5">
-                  <h3>test</h3>
+                  <h3>${{ profit }}</h3>
                   <p>Profit</p>
               </div>
               <div class="col-sm-1">
-                <h3>test</h3>
+                <h3>${{ profitability }}</h3>
                 <p>Profitability</p>
             </div>
           </div>
@@ -139,9 +139,9 @@ document.getElementById("index").className = "active";
 
   </div>>
 
-  <script src="../script.js"></script>
-  <script src="../Chart.js"></script>
-  <script src="../sales_chart.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='javascript/Chart.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='javascript/sales_chart.js') }}"></script>
 
   </body>
 </html>
