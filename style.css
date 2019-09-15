@@ -24,6 +24,9 @@
     background-color: rgb(240, 240, 240);
     height: 80px;
   }
+  #username {
+    font-weight: 700; 
+  }
 
   /* Menu Bar */
   .topnav a {
