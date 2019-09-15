@@ -20,7 +20,7 @@
   <nav class="navbar navbar-default static-top">
     <div class="container">
       <a href="index.html">
-        <img src="../logo.svg" alt="Novella Logo" height=50px; />
+        <img src="../logo.svg" alt="Novella Logo" height=50px; class="logo"/>
       </a>
       <div class="col-8">
         <img src="" alt="" />
@@ -157,8 +157,15 @@ $(function () {
             class="img-fluid illustration" alt="Responsive image">
           <h3 style="font-size: 16px !important";>Winter is coming!</h3>
           <p class="grey-txt">The holiday season is fast approaching and according to your past years, this is one of
-            the busiest times of the year for Bailey’s Catering. <br><br>
-            Keep in mind to increase your supplies. You may want to consider hiring additional staff members.</p>
+            the <b class="blue-txt">busiest times</b> of the year for Bailey’s Catering. <br><br>
+            Keep in mind to increase your supplies. You may want to consider <b class="blue-txt"> hiring additional</b> staff members.</p>
+            <button id="blue"><p class="white-txt">Increase Salaries</p></button>
+        </div>
+
+        <div class="side-box">
+            <h2></h2>
+          <h3 style="font-size: 16px !important";>Great Ratios!</h3>
+          <p class="grey-txt">Congratulations on a very successful week! You've increased your weekly sales <b class="blue-txt">by 2.3%!</b> That's great to hear, and Bailey's Catering has been seeing a <b class="blue-txt"> steady growth</b> for the past few months.</p>
         </div>
       </div>
     </div>
@@ -173,5 +180,8 @@ $(function () {
   <script src="../sales_chart.js"></script>
 
 </body>
+<footer style="height:80px"> 
+
+  </footer>
 
 </html>
