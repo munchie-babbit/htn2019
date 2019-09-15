@@ -2,7 +2,7 @@ var ctx = document.getElementById('sales_chart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Saturday'],
+        labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri','Sat'],
         datasets: [{
             label: 'Revenue',
             data: [12, 19, 3, 5, 2, 3,2],
