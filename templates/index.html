@@ -62,7 +62,6 @@ $(function () {
 <script>
 document.getElementById("index").className = "active";
 </script>
-
   <!-- Content -->
 
   <div class="container" id="toanimate" style="display:none">
@@ -73,7 +72,7 @@ document.getElementById("index").className = "active";
         <div class="overview">
           <div class="row">
             <div class="col-sm-4">
-                <h3>test</h3>
+                <h3>${{ revenue }}</h3>
                 <p>Revenue</p>
               </div>
               <div class="col-sm-5">
@@ -112,15 +111,15 @@ document.getElementById("index").className = "active";
           <div class="stats">
             <div class="row">
               <div class="col-sm-4">
-                  <h3>test</h3>
+                  <h3>${{ revenue_today }}</h3>
                   <p>Revenue</p>
                 </div>
                 <div class="col-sm-5">
-                    <h3>test</h3>
+                    <h3>${{ profit_today }}</h3>
                     <p>Profit</p>
                 </div>
                 <div class="col-sm-1">
-                  <h3>test</h3>
+                  <h3>${{ profitability_today }}</h3>
                   <p>Profitability</p>
               </div>
             </div>
@@ -133,15 +132,59 @@ document.getElementById("index").className = "active";
       <div class="col-sm-8">
         <div class="boxes">
           <h2>Today's Revenue Streams</h2>
+            <h3>Max Buyer</h3>
+            <h2>{{ max_buyer }}</h2>
         </div>
       </div>
     </div>
 
-  </div>>
-
+  </div>
   <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='javascript/Chart.js') }}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='javascript/sales_chart.js') }}"></script>
+
+  <script>
+var ctx = document.getElementById('sales_chart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri','Sat'],
+        datasets: [{
+            label: 'Revenue',
+            data: {{ revenue_data }},
+            borderColor: 'rgba(66,155,227,1)',
+            backgroundColor: 'rgba(0,0,0,0)',
+            pointBackgroundColor: 'rgba(66,155,227,1)',
+            pointRadius: 2,
+            pointHoverRadius: 5,
+            borderWidth: 2,
+        },
+        {
+            label: 'Profit',
+            data: {{ profit_data }},
+            borderColor: 'rgba(81,179,155,1)',
+            backgroundColor: 'rgba(0,0,0,0)',
+            pointBackgroundColor: 'rgba(81,179,155,1)',
+            pointRadius: 2,
+            pointHoverRadius: 5,
+            borderWidth: 2,
+        }]
+    },
+    options: {
+        legend : {
+            display: true,
+            position: 'bottom',
+            fillStyle:'rgba(66,155,227,1)',
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    }
+});
+</script>
 
   </body>
 </html>

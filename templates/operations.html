@@ -70,7 +70,7 @@
                             <p>In Cash</p>
                         </div>
                         <div class="col-sm-4">
-                            <h3>test</h3>
+                            <h3>${{ cogs }}</h3>
                             <p>COGS</p>
                         </div>
                         <div class="col-sm-4">
@@ -136,7 +136,49 @@
 =======
     <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='javascript/Chart.js') }}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='javascript/operations_chart.js') }}"></script>
+    <script>
+        var ctx = document.getElementById('operations_chart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri','Sat'],
+        datasets: [{
+            label: 'Revenue',
+            data: {{ revenue_data }},
+            borderColor: 'rgba(66,155,227,1)',
+            backgroundColor: 'rgba(0,0,0,0)',
+            pointBackgroundColor: 'rgba(66,155,227,1)',
+            pointRadius: 2,
+            pointHoverRadius: 5,
+            borderWidth: 2,
+        },
+        {
+            label: 'Expenses',
+            data: {{ expense_data }},
+            borderColor: 'rgba(224,127,127,1)',
+            backgroundColor: 'rgba(0,0,0,0)',
+            pointBackgroundColor: 'rgba(224,127,127,1)',
+            pointRadius: 2,
+            pointHoverRadius: 5,
+            borderWidth: 2,
+        }]
+    },
+    options: {
+        legend : {
+            display: true,
+            position: 'bottom',
+            fillStyle:'rgba(66,155,227,1)',
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    }
+});
+    </script>
 >>>>>>> a4fc9e10f48488458a7ad5c6d1c6edf979ca5fe4
 
 </body>
