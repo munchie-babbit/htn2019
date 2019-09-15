@@ -40,12 +40,22 @@ def test_authentication():
 @app.route('/operations.html')
 def operations():
     loan = Loan(get_account_id(), _get_access_token())
-    return render_template('operations.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp())
+    return render_template('operations.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp(), revenue_data=loan.get_week_revenue(), expense_data=loan.get_week_expenses(), cogs=loan.get_expense_total())
 
-@app.route('/')
+@app.route('/index.html')
 def index():
     loan = Loan(get_account_id(), _get_access_token())
-    return render_template('index.html', profit=loan.get_profit(), profitability=loan.get_profit_analysis())
+    return render_template('index.html', profit=loan.get_profit(), profitability=loan.get_profit_analysis(), revenue=loan.get_income_total(), revenue_today=loan.get_total_today(), profit_today=loan.get_profit_today(), profitability_today=loan.get_profit_analysis_today(), profit_data=loan.get_week_profit(), revenue_data=loan.get_week_revenue(), max_buyer=loan.get_biggest_buyer())
+
+@app.route('/')
+def blank():
+    loan = Loan(get_account_id(), _get_access_token())
+    return render_template('index.html', profit=loan.get_profit(), profitability=loan.get_profit_analysis(), revenue=loan.get_income_total(), revenue_today=loan.get_total_today(), profit_today=loan.get_profit_today(), profitability_today=loan.get_profit_analysis_today(), profit_data=loan.get_week_profit(), revenue_data=loan.get_week_revenue(), max_buyer=loan.get_biggest_buyer())
+
+@app.route('/assistants.html')
+def assistants():
+    loan = Loan(get_account_id(), _get_access_token())
+    return render_template('assistants.html')
 
 def _cache_access_token(access_token):
     with open("access_token", "w") as fh:
@@ -100,7 +110,9 @@ def get_account_id():
 
 if __name__ == '__main__':
     app.run()
-    #loan = Loan(get_account_id(), _get_access_token())
+    # loan = Loan(get_account_id(), _get_access_token())
+    # print(loan.last_week())
+    # print(loan.get_expenses_today())
     # print(loan.get_income_total())
     # print(loan.get_expense_total())
     # print(loan.get_average_order_value())
