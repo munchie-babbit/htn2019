@@ -42,7 +42,7 @@
     text-decoration: none;
 
   }
-  .topnav a.active {
+  .topnav .active {
     color: black;
     font-size: 24px;
     font-weight: 500;

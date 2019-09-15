@@ -39,8 +39,13 @@ def test_authentication():
 
 @app.route('/operations.html')
 def operations():
-    #loan = Loan(get_account_id(), _get_access_token())
-    return render_template('operations.html')
+    loan = Loan(get_account_id(), _get_access_token())
+    return render_template('operations.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp())
+
+@app.route('/')
+def operations():
+    loan = Loan(get_account_id(), _get_access_token())
+    return render_template('operations.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp())
 
 def _cache_access_token(access_token):
     with open("access_token", "w") as fh:
