@@ -1,189 +1,221 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
-
 * {
-    font-family: Roboto, sans-serif;
-  }
+  font-family: Roboto, sans-serif;
+}
 
-  /* Profile Info */
-  #user-align {
-    text-align: start;
-  }
-  #dp-align {
-    text-align: end;
-  }
-  #dp {
-    border-radius: 100px; 
-  }
-  .container #user-align p {
-    margin: -5px;
-    padding: 0px;
-  }
+/* Profile Info */
 
-  /* Top Bar */
-  .navbar-default {
-    background-color: rgb(240, 240, 240);
-    height: 80px;
-  }
-  #username {
-    font-weight: 700; 
-  }
+#user-align {
+  text-align: start;
+}
 
-  /* Menu Bar */
-  .topnav a {
-    margin: 30px 0px 16px 0px;
-    float: left;
-    display: block;
-    color: #ABABAB;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 21px;
-    line-height: 24px;
-  }
-  .topnav a:hover {
-    color: black;
-    text-decoration: none;
+#dp-align {
+  text-align: end;
+}
 
-  }
-  .topnav .active {
-    color: black;
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration: none;
-  }
+#dp {
+  border-radius: 100px;
+}
 
-  /* Content */
-  .container h1 {
-    font-size: 16px;
-    color: #ABABAB;
-    text-align: left;
-  }
+.container #user-align p {
+  margin: -5px;
+  padding: 0px;
+}
 
-  .container h2 {
-    font-size: 16px;
-    color: #ABABAB;
-    text-align: left;
-  }
+/* Top Bar */
 
-  .container p{
-    font-size: 13px;
-  }
+.navbar-default {
+  background-color: rgb(241, 246, 253);
+  height: 120px;
+}
 
-  .overview {
-    background-color: #51B39B;
-    box-shadow: 1px 1px 17px 0 #DFE6EB;
-    color: #DDEAF5;
-    padding: 25px 25px; 
-    margin: 10px 0px; 
-  }
-  .stats h3{
-    color: #A6D2B5;
-  }
-  .stats p{
-    color: black;
-  }
+#username {
+  font-weight: 700;
+}
 
-  .grey-txt{
-    font-size: 12px;
-    color: #7D7D7D !important;
-    text-align: left;
-  }
-  .boxes {
-    background-color: white;
-    box-shadow: 1px 1px 17px 0 #DFE6EB;
-    color: #DDEAF5;
-    padding: 25px 25px; 
-    margin: 10px 0px; 
-  }
+/* Menu Bar */
 
-  .side-box {
-    background-color: white;
-    box-shadow: 1px 1px 17px 0 #DFE6EB;
-    color: #DDEAF5;
-  }
+.topnav a {
+  margin: 30px 0px 16px 0px;
+  float: left;
+  display: block;
+  color: #ABABAB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 24px;
+}
 
-  .side-box p {
-    padding: 25px 25px; 
-  }
-  #as-txt .grey-txt{
-    font-size: 14px;
-    color: #7D7D7D !important;
-    width: 95%;
-    text-align: left;
-  }
-  #as-txt{
-    padding-top: 34px !important;
-  }
-  .as-boxes {
-    background-color: white;
-    box-shadow: 1px 1px 17px 0 #DFE6EB;
-    color: #DDEAF5;
-    margin: 0 0 25px 0; 
-  }
-  .white-txt {
-    color: white !important;
-    margin: 10px;
-  }
-  button {
-    margin: 10px;
-  }
-  #river {
-    background-color: #429BE3;
-    box-shadow: 1px 1px 0 0 #DFE6EB;
-    color: #DDEAF5;
-    padding: 0px; 
-    margin: 0px; 
-  }
-  #river button{
-    background-color: #429BE3;
-  }
-  #harper {
-    background-color: #51B39B;
-    box-shadow: 1px 1px 0 0 #DFE6EB;
-    color: #DDEAF5;
-    padding: 0px; 
-    margin: 0px; 
-  }
-  #harper {
-    background-color: #51B39B;
-  }
-  #jordan {
-    background-color: #E08989;
-    box-shadow: 1px 1px 0 0 #DFE6EB;
-    color: #DDEAF5;
-    padding: 0px; 
-    margin: 0px; 
-  }
-  #jordan button{
-    background-color: #E08989;
-  }
+.topnav a:hover {
+  color: black;
+  text-decoration: none;
+}
 
- .img-fluid img {
-    display: block;
-    margin-left: 60%;
-    margin-right: 50%;
-    margin-top: 20px;
-    width: 60%;
-  }
+.topnav .active {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
 
-  .col h3 {
-    color: black; 
-  }
+/* Content */
 
-  .col p {
-    color: black; 
-    font-size: 15px;
-  }
+.container h1 {
+  font-size: 16px;
+  color: #ABABAB;
+  text-align: left;
+}
 
-  #as-txt{
-    padding: 25px 25px;  
-  }
+.container h2 {
+  font-size: 16px;
+  color: #ABABAB;
+  text-align: left;
+}
+
+.container p {
+  font-size: 13px;
+}
+
+.overview {
+  background-color: #51B39B;
+  box-shadow: 1px 1px 17px 0 #DFE6EB;
+  color: #DDEAF5;
+  padding: 25px 25px;
+  margin: 10px 0px;
+}
+
+h3 {
+  font-size: 14px !important;
+  color: #262626 !important;
+  text-align: left;
+}
+
+.stats p {
+  color: black;
+}
+
+.grey-txt {
+  font-size: 12px;
+  color: #7D7D7D !important;
+  text-align: left;
+}
+
+.boxes {
+  background-color: white;
+  box-shadow: 1px 1px 17px 0 #DFE6EB;
+  color: #DDEAF5;
+  padding: 25px 25px;
+  margin: 10px 0px;
+}
+
+.side-box {
+  background-color: white;
+  box-shadow: 1px 1px 17px 0 #DFE6EB;
+  color: #DDEAF5;
+}
+
+.side-box {
+  padding: 25px 25px;
+}
+
+
+#as-txt .grey-txt {
+  font-size: 14px;
+  color: #7D7D7D !important;
+  width: 95%;
+  text-align: left;
+}
+
+#as-txt {
+  padding-top: 34px !important;
+}
+
+.as-boxes {
+  background-color: white;
+  box-shadow: 1px 1px 17px 0 #DFE6EB;
+  color: #DDEAF5;
+  margin: 0 0 25px 0;
+}
+
+.white-txt {
+  color: white !important;
+  margin: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+#river {
+  background-color: #429BE3;
+  box-shadow: 1px 1px 0 0 #DFE6EB;
+  color: #DDEAF5;
+  padding: 0px;
+  margin: 0px;
+}
+
+#river button {
+  background-color: #429BE3;
+}
+
+#harper {
+  background-color: #51B39B;
+  box-shadow: 1px 1px 0 0 #DFE6EB;
+  color: #DDEAF5;
+  padding: 0px;
+  margin: 0px;
+}
+
+#harper {
+  background-color: #51B39B;
+}
+
+#jordan {
+  background-color: #E08989;
+  box-shadow: 1px 1px 0 0 #DFE6EB;
+  color: #DDEAF5;
+  padding: 0px;
+  margin: 0px;
+}
+
+#jordan button {
+  background-color: #E08989;
+}
+
+.img-fluid img {
+  display: block;
+  margin-left: 60%;
+  margin-right: 50%;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 60%;
+}
+
+.col p {
+  color: black;
+  font-size: 15px;
+}
+
+#as-txt {
+  padding: 25px 25px;
+}
 
 /* River's Assistant Form */
+
 .button #river {
   background-color: #429BE3;
   padding: 30px 30px;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
+}
+
+#blue {
+  background-color: #429BE3;
+}
+
+.illustration{
+  margin-bottom: 24px;
 }
