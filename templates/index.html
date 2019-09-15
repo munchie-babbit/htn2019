@@ -18,13 +18,13 @@
 <nav class="navbar navbar-default static-top">
     <div class="container">
         <a href="index.html">
-        <img src="../htn_logo.svg" alt="Novella Logo" height=30px;/>
+        <img src="{{ url_for('static',filename='images/htn_logo.svg') }}" alt="Novella Logo" height=30px;/>
         </a>
         <div class="col-8">
             <img src="" alt=""/>
         </div>
         <div class="col-1" id="dp-align">
-          <img src="{{ url_for('static',filename='images/alexdp.png') }}" alt="Profile Image" height=30px; id="dp"/>
+            <img src="{{ url_for('static',filename='images/alexdp.jpg') }}" alt="Profile Image" height=30px; id="dp" />
         </div>
         <div class="col" id="user-align">
           <p id="username">Test</p>
@@ -56,11 +56,11 @@
                 <p>Revenue</p>
               </div>
               <div class="col-sm-5">
-                  <h3>test</h3>
+                  <h3>${{ profit }}</h3>
                   <p>Profit</p>
               </div>
               <div class="col-sm-1">
-                <h3>test</h3>
+                <h3>${{ profitability }}</h3>
                 <p>Profitability</p>
             </div>
           </div>
@@ -118,9 +118,9 @@
 
   </div>>
 
-  <script src="../script.js"></script>
-  <script src="../Chart.js"></script>
-  <script src="../sales_chart.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='javascript/Chart.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='javascript/sales_chart.js') }}"></script>
 
   </body>
 </html>

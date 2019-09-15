@@ -64,7 +64,7 @@ class Loan():
     def get_average_order_value(self):
         invoice_count = len(self.invoice_dict['result']['invoices'])
         invoice_total = self.get_invoice_total()
-        return invoice_total / invoice_count
+        return round(invoice_total / invoice_count, 2)
 
     def get_profit(self):
         return self.get_income_total() - self.get_expense_total()
@@ -74,7 +74,8 @@ class Loan():
         else: return -1
 
     def get_profit_analysis(self):
-        return self.get_profit() / self.get_expense_total()
+        if self.get_expense_total() == 0: return 0
+        else: return round(self.get_profit() / self.get_expense_total(), 2)
 
     def get_cash(self):
         return self.get_profit() - self.get_expense_total()

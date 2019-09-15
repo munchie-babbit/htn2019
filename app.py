@@ -45,7 +45,7 @@ def operations():
 @app.route('/')
 def index():
     loan = Loan(get_account_id(), _get_access_token())
-    return render_template('index.html', cash=loan.get_cash(), biggest_exp=loan.get_biggest_exp())
+    return render_template('index.html', profit=loan.get_profit(), profitability=loan.get_profit_analysis())
 
 def _cache_access_token(access_token):
     with open("access_token", "w") as fh:
@@ -100,13 +100,13 @@ def get_account_id():
 
 if __name__ == '__main__':
     app.run()
-    # loan = Loan(get_account_id(), _get_access_token())
+    #loan = Loan(get_account_id(), _get_access_token())
     # print(loan.get_income_total())
     # print(loan.get_expense_total())
     # print(loan.get_average_order_value())
     # print(loan.get_profit())
     # print(loan.get_sales_on_account())
-    # print(loan.get_profit_analysis())
+    #print(loan.get_profit_analysis())
     # print(loan.get_cash())
     # print(loan.get_biggest_exp())
     # print(loan.get_client_dict())
