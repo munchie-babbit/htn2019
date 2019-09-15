@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" , "shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>repl.it</title>
     <link href="../style.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -26,19 +26,35 @@
                 <img src="../alexdp.jpg" alt="Profile Image" height=30px; id="dp" />
             </div>
             <div class="col" id="user-align">
-                <p id="username">Test</p>
-                <p id="companyname">Test</p>
+                <p id="username">Alex Drazilov</p>
+                <p id="companyname">Bailey's Catering</p>
             </div>
         </div>
     </nav>
+    
     <!-- Nav Bar-->
-    <div id="nav-placeholder"></div>
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("topnav.html");
-        });
-    </script>
+    <div class="container">
+            <div class="row">
+              <div class="topnav" id="myTopnav">
+              <a href="index.html" id="index">Sales</a>
+              <a href="marketing.html" id="marketing">Marketing</a>
+              <a href="operations.html" id="operations">Operations</a>
+              <a href="finances.html" id="finances">Finances</a>
+              <a href="assistants.html" id="assistants">Assistants</a>
+              <a href="add.html"><strong>+</strong></a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              </div>
+            </div>
+          </div>
+
     <br>
+
+    <!-- Make this page active -->
+    <script>
+        document.getElementById("operations").className = "active";
+    </script>
 
     <!-- Content -->
 
@@ -113,9 +129,9 @@
     </div>
 
 </div>
-    <script src="../script.js"></script>
-    <script src="../Chart.js"></script>
-  <script src="../operations_chart.js"></script>
+<script src="../script.js"></script>
+<script src="../Chart.js"></script>
+<script src="../operations_chart.js"></script>
 
 </body>
 
