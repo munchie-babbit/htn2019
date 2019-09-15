@@ -21,22 +21,26 @@ $(document).ready(function(){
     $("#toanimate").hide();
     $("#page1").show();
     $("#page3").hide();
+    $("#page5").hide();
   });
 
   $("#page1, #river-button").click(function(){
     $("#page1").hide();
     $("#page2").show();
     $("#page3").hide();
+    $("#page5").hide();
   });
 
   $("#page2, #river-button").click(function(){
     $("#page2").hide();
     $("#page3").show();
+    $("#page5").hide();
   });
 
   $("#page3, #river-button").click(function(){
     $("#page3").hide();
     $("#page4").show();
+    $("#page5").hide();
   });
 
   $("#page4, #river-button").click(function(){
