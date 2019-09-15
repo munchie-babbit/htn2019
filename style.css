@@ -27,7 +27,7 @@
 
   /* Menu Bar */
   .topnav a {
-    margin: 64px 0px 16px 0px;
+    margin: 30px 0px 16px 0px;
     float: left;
     display: block;
     color: #ABABAB;
@@ -86,4 +86,14 @@
     color: #DDEAF5;
     padding: 25px 25px; 
     margin: 10px 0px; 
+  }
+
+  .side-box {
+    background-color: white;
+    box-shadow: 1px 1px 17px 0 #DFE6EB;
+    color: #DDEAF5;
+  }
+
+  .side-box p {
+    padding: 25px 25px; 
   }
